@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setFullName(){
+            var fname = document.getElementById("fname");
+            var mname = document.getElementById("mname");
+            var lname = document.getElementById("lname");
+            var fullname = document.getElementById("fullname");
+            fullname.value = fname.value+ " " + mname.value + " " + lname;
+        }
+        function clrme(){
+            var clrme = document.getElementById("fullname");
+            clrme.value = null;
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter details</h1>
+    
+    <label>First name:</label>
+    <input type="text" id="fname">
+    <br>
+    <label>last name:</label>
+    <input type="text" id="lname">
+    <br>
+    <label>middle name</label>
+    <input type="text" id="mname">
+    <br>
+    <label>Full name</label>
+    <input type="text" id="fullname">
+    <br>
+    <button onclick="setFullName()">submit</button>
+    <br>
+    <button onclick="clrme()">clear</button>
+</body>
+</html>

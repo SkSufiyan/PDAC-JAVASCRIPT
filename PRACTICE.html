@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Form</title>
+    <script>
+      function setFullName() {
+        var fName = document.getElementById("fname");
+        var lName = document.getElementById("lname");
+        var mName = document.getElementById("mname")
+        var fullname = document.getElementById("fullname");
+        fullname.value = fName.value + " "+mName.value+ " " +lName.value;
+      }
+      function clrme(){
+        var clrme = document.getElementById("fullname")
+        clrme.value = null;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Employee Details</h1>
+    <hr >
+    <h4>Personal info</h4>
+
+    <!--  Simple Form -->
+
+    <label>First Name:</label>
+    <input type="text" id="fname" >
+    <br>
+    <label> last Name:</label>
+    <input type="text" id="lname">
+    <br>
+    <label> Middle Name:</label>
+    <input type="text" id="mname" >
+    <br>
+    <label>Full Name:</label>
+    <input type="text" id="fullname" >
+    <br>
+    <button onclick="setFullName()">Submit</button>
+    <br>
+    <button onclick="clrme()">clear</button>
+    <br>
+    <hr >
+    
+  </body>
+
+</html>
